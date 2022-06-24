@@ -14,14 +14,65 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #cdcdcd;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
+}
+
+.options-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option{
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+  background-color: white;
+}
+
+.option.active {
+  transition: all .3s ease-in-out;
+  background-color: rgb(162, 230, 239);
+}
+
+.results {
+  /* background-color: #cdcdcd; */
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  color: rgb(0, 0, 0);
+}
+
+.CakeItem {
+  padding-inline: 20px;
+  display: flex;
+  align-items: left;
+  text-align: left;
+  width: 400px;
+  flex-direction: column;
+}
+
+.person-item{
+  width: 400px;
+  padding: 10px;
+  text-align: left;
+}
+
+.result-text{
+  font-size: .5em;
 }
 
 .App-link {
